@@ -38,6 +38,42 @@ class UpdateUser extends React.Component {
             isActive: ""
         }));
     }
+
+    render() {
+        return(
+            <form onSubmit={this.handleSubmit}> 
+                <input 
+                    name="username" 
+                    type="text"
+                    value={this.state.username}
+                    placeholder= "Username"
+                    onChange={this.handleChange}/>
+                <input 
+                    name="email" 
+                    type="text"
+                    value={this.state.email}
+                    placeholder= "E-mail Address"
+                    onChange={this.handleChange}/>
+                <input
+                    name="password"
+                    type= "text"
+                    value={this.state.password}
+                    placeholder= "Password"
+                    onChange={this.handleChange}/>
+                <select
+                    name="isActive"
+                    value={this.state.isActive}
+                    onChange={this.handleChange}>
+                    <option value={true}>Online</option>
+                    <option value={false}>Not Online</option>
+                    
+                </select>
+
+                <input type="submit" value="Create New User"/>
+                <input type="button" value="Cancel" onClick={this.props.refresh}/>
+            </form>
+        )
+    }
 }
 
 export default UpdateUser;

@@ -1,5 +1,6 @@
 import React from 'react';
 import UserInfo from './userinfo';
+import './App.css';
 
 function App() {
   return (

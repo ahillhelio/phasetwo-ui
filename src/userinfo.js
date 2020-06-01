@@ -11,6 +11,7 @@ class UserInfo extends Component {
             userinfo : [
               
             ],
+            isCreate : true,
         }
     }
 

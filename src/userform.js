@@ -58,7 +58,7 @@ class UserForm extends React.Component {
                     name="password"
                     type= "text"
                     value={this.state.password}
-                    placeholder= "Year Produced"
+                    placeholder= "Password"
                     onChange={this.handleChange}/>
                 <select
                     name="isActive"
